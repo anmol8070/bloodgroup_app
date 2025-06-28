@@ -1,0 +1,10 @@
+/app.py
+/cnn_model.py
+/cnn_train.py
+/preprocess.py
+/README.md
+/static
+/templates
+/uploads
+/venv
+/verify_dataset.py
