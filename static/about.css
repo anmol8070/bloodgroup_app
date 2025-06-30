@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0b0b45;  /* Dark Blue */
+  color: #f1c40f;       /* Gold */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b71c1c; /* RCB red */
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #f1c40f;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f1c40f;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;  /* Bright gold on hover */
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(183, 28, 28, 0.2); /* Red tint background */
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+ul li::before {
+  content: '★ ';
+  color: #f1c4
+}
