@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Home</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='hospitalhome.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Fingerprint</h1>
+    <form method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
+      <label>Patient Name:
+        <input type="text" name="pname" required>
+      </label>
+      <label>Age:
+        <input type="number" name="age" required>
+      </label>
+      <label>Gender:
+        <input type="text" name="gender" required>
+      </label>
+      <label>Fingerprint:
+        <input type="file" name="file" accept=".bmp,.png,.jpg" required>
+      </label>
+      <button type="submit">Predict Blood Group</button>
+    </form>
+  </div>
+</body>
+</html>
