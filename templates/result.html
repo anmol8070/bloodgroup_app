@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Prediction Result</h1>
+    <p><strong>Patient Name:</strong> {{ pname }}</p>
+    <p><strong>Age:</strong> {{ age }}</p>
+    <p><strong>Gender:</strong> {{ gender }}</p>
+    <p><strong>Predicted Blood Group:</strong> <span style="color: green;">{{ result }}</span></p>
+    <a href="/hospitalhome">Predict Another</a>
+  </div>
+</body>
+</html>
